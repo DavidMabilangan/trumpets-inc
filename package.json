@@ -1,7 +1,7 @@
 {
   "name": "inc",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,11 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^4.2.2",
+    "@nuxt/image": "^2.0.0",
+    "@nuxt/scripts": "^0.13.2",
+    "@unhead/vue": "^2.1.2",
+    "nuxt": "^3.20.2",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"
-  },
-  "devDependencies": {
-    "stylus": "^0.64.0"
   }
 }
