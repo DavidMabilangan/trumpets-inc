@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
-  css: ['@/assets/styles/stylus/defaults.styl'],
+  css: ['/assets/stylus/default.styl'],
   modules: ['@nuxt/image', '@nuxt/scripts']
 })
