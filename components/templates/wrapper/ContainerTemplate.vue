@@ -22,12 +22,8 @@ defineProps({
 .template
   width: 100%
   margin: 0 auto
-  background-color: red
-
   &--relative
     position: relative
-
   &--w-1440
     max-width: 1440px
-    outline: 1px solid red
 </style>
