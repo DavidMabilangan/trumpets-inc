@@ -1,4 +1,6 @@
 <script setup>
+import ContainerTemplate from '~/components/templates/wrapper/ContainerTemplate.vue';
+
 </script>
 
 <template>
