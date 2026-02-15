@@ -26,4 +26,6 @@ defineProps({
     position: relative
   &--w-1440
     max-width: 1440px
+  &--w-2000
+    max-width: 2000px
 </style>
