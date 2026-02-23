@@ -12,7 +12,7 @@
     <ContainerTemplate :templates="['w-1440']" :class="styl['shows']">
         <ul :class="styl['shows__list']">
             <li v-for="(item, key) in shows.shows" :key="key" :class="styl['shows__list-item']">
-                <NuxtImg :src="item.thumbnail" preload loading="lazy"/>
+                <NuxtImg :src="item.thumbnail" preload loading="lazy" :class="styl['shows__list-item__img']"/>
                 <p>{{item.title}}</p>
             </li>
         </ul>
@@ -32,5 +32,9 @@
                 text-align: center
                 margin: 0 15px
                 list-style: none
+                &__img
+                    height: 600px
+                    width: 100%
+                    object-fit: cover
 
 </style>
