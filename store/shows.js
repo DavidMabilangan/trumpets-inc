@@ -3,8 +3,9 @@ import { defineStore } from 'pinia'
 export const useShows = defineStore('shows', {
   state: () => ({
     shows: [
+      //First Name
       {
-        thumbnail: '/thumbnails/Firstname',
+        thumbnail: '/thumbnails/Firstname.webp',
         title: 'First Name',
         descriptions:
           "This new staging of First Name is conceptualized to be a celebration full of life, radicalism and energy. <br/ > Staged with highly dramatic lighting and the simplest of sets, First Name takes the audience on a journey through the Biblethrough the eyes of today's generation.The music, composed by Gary Valenciano and Ogie Alcasid, is arranged by Mon Faustino of Power Play and the result is a score that is dynamic, forceful and reflective of the new millennium. <br/ > The libretto and lyrics are by award-winning director and writer Freddie Santos. Hit songs from this show include the internationally-released 'Could You Be Messiah' and 'Woman With No Name' <br/ > This Trumpets original musical, created by the late Freddie Santos is made for families, and the youth and adults of the current generation.",
@@ -21,6 +22,7 @@ export const useShows = defineStore('shows', {
         characters: [''],
         images: [''],
       },
+      //Joseph The Dreamer
       {
         thumbnail: '/thumbnails/JosephTheDreamer.webp',
         title: 'Joseph the Dreamer',
@@ -67,24 +69,27 @@ export const useShows = defineStore('shows', {
         ],
         images: [''],
       },
+      //Noah
       {
-        thumbnail: '',
+        thumbnail: '/thumbnails/Noah.webp',
         title: 'N.O.A.H',
         descriptions: " Imagine a world full of garbage… Not that difficult to do, huh? Well, that’s exactly the kind of world Mr. Noah and his family live in. Mr. Noah has to clean up after all his neighbors who just couldn’t care less what they do with their lives as long as they have fun all day long. Mr. Noah looks at this world and prays for a solution to their garbage dilemma. Not long after, the Creator of all things, God, comes into the picture. He asks Noah to build him a boat, but not just any kind of boat,  a VERY BIG BOAT - AN ARK. He also orders that two of every kind of animal in the world be brought into the ark and that Noah and his family leave everything they have behind and come onboard as well. Though startled at the idea, Mr. Noah (with a “little” reservation) obeys. Rain breaks loose and the earth is submerged under water for 40 days and 40 nights. Noah and the animals are saved, but bored on the Ark. After finding different ways to amuse themselves, they realize how lucky they are and what a responsibility they have for future generations. Soon after, the Ark hits land. The garbage problem is solved. No surprise there. Noah and family stand in awe at God’s BIG PICTURE sealed with a reminder of HIs promise, a beautiful rainbow.",
         songs: [''],
         characters: [''],
         images: [''],
       },
+      //Pamilya Maleta
       {
-        thumbnail: '',
+        thumbnail: '/thumbnails/PamilyaMaleta.webp',
         title: 'Pamilya Maleta',
         descriptions: "  Pamilya Maleta is the story of a family whose life is ridden with problems which are reflective of those that plague many Filipino families today. Berto, the father, is a drunkard who escapes from his responsibilities by turning to the bottle. Kikay, his wife, is a Japayuki who supplements her earnings by running a one-woman recruitment agency for ambitious and desperate young girls. They have four children: Talino is an arrogant wannabe intellectual who complains about being born into the wrong family. Betchay is a happy-go-lucky tomboy who has a penchant for stealing. Rosanna changes boyfriends like she changes shirts in a week. And Tan-G-A, the youngest, is the simple-minded but affectionate brother who is appreciated only by his sisters. <br/> The story of Pamilya Maleta takes the audience through the often comic, sometimes tragic tale of a family whose story can also be our own. Each time, it has never failed to regale the audience with its songs and its endearing brand of humor at one moment, and then move them to tears at the next, when Pamilya Inusisa seems to be at its lowest and when it triumphs in the end.",
         songs: ['Bongga Hotdog', 'Careless Circus', 'Maniwala', 'Rosanna’s Song', 'Pamilya Maleta Song'],
         characters: ['Berto', 'Kikay', 'Talino', 'Betchay', 'Rosanna', 'Tan-G-A'],
         images: [''],
       },
+      //The Bluebird of Happiness
       {
-        thumbnail: '',
+        thumbnail: '/thumbnails/TheBlueBirdOfHappiness.webp',
         title: 'The Bluebird of Happiness',
         descriptions: "This Trumpets adaptation follows the wondrous adventures of brother and sister, Tyltyl and Mytyl. Discontent and disappointed by having less in life than their neighbors,  they seek the elusive bluebird of happiness in an attempt to find the “more” which their hearts desire. Accompanied by their loyal dog Tylo, cunning cat Tylette, and their new friend Light, the children face friends and foes alike as they search for the true meaning of happiness. <br/> The Blue Bird (A Fairy Play in Six Acts) premiered at the Moscow Art Theatre in 1908, while its first London production was at the Theatre Royal Haymarket in early 1909 with several revivals in the following years. The original Broadway production opened in 1910 with revivals in 1911 and 1924. Several movie versions of The Blue Bird have been made over the years with one released by 20th Century Fox  in 1940, starring Shirley Temple. <br/> The original play had magic, humor, and universal truths. This stage version by Trumpets boasts no less with the added value and joy of memorable, and heart-stirring music.",
         songs: [
@@ -109,9 +114,10 @@ export const useShows = defineStore('shows', {
         characters: ['Mytyl', 'Tyltyl', 'Mama Tyl', 'Papa Tyl', 'Father Time', 'Berylune', 'Tylo', 'Light', 'Tylette', 'Grandpa', 'Grandma', 'Night', 'Red', 'Oak', 'Fir',  'Cedar', 'Luxuries', 'Emcee', 'Temps', 'Innocence','Optimism','Time','Nghtmares','Emsemble (Adult and Child)'],
         images: [''],
       },
+      //The Horse and his Boy
       {
-        thumbnail: '',
-        title: 'The Hourse and His Boy',
+        thumbnail: '/thumbnails/TheHorseAndHisBoy.webp',
+        title: 'The Horse and His Boy',
         descriptions: "The Horse and His Boy is the story of an orphan boy, Shasta, and a talking horse, Bree, as they journey towards freedom from oppression and slavery. They fly from a foreign land to Narnia, the place the horse calls home, and where the boy hopes to find who he is and where he truly belongs. <br/>  Along the way, they are joined by a young noblewoman, Aravis, and a talking mare, Hwin, who both share their desire for freedom. Together they embark on a grand adventure through deserts and mountains, risk near capture, encounter danger, face the unknown, take part in a battle, and finally, find themselves and their destined place in the sun. <br/ Reconnect with beloved characters from The Lion, the Witch, and the Wardrobe - the grown-ups Susan, Edmund, and Lucy now reigning monarchs of Narnia, the faun Tumnus, and of course, the Great Lion, Aslan - and meet many new colorful and fascinating characters.>",
         songs: [''],
         characters: [
@@ -145,16 +151,18 @@ export const useShows = defineStore('shows', {
           ],
         images: [''],
       },
+      //The Little Mermaid
       {
-        thumbnail: '',
-        title: 'The Little Mermaid',
+        thumbnail: '/thumbnails/LittleMermaid.webp',
+        title: 'Little Mermaid',
         descriptions: "  This retelling of the classic Hans Christian Andersen novel shows the meaning of unconditional and everlasting love, and what one little mermaid is willing to sacrifice, told through songs, movement, and vibrant storytelling. <br/> On her 16th birthday, Princess Jewel is about to assume her full-fledged duties as a Siren tempting sailors to jump overboard, give up their souls, and become slaves beneath the sea. However, she instead falls in love with the dashing Prince Christian and tries to find a way to be with him. Learning of Jewel’s secret love, Crustacea lures the princess into a dangerous deal. In exchange for human legs, Jewel must make the Prince fall in love with her within three days or else she loses her life. <br/> When Jewel realizes that Prince Christian feels nothing but brotherly love for her, she is faced with a most critical choice: To end the Prince’s life in exchange for her own or to make the greatest sacrifice of all? ",
         songs: [''],
         characters: [''],
         images: [''],
       },
+      //The Lion, The Witch and The Wardrobe
       {
-        thumbnail: '',
+        thumbnail: '/thumbnails/TheLionTheWitchAndTheWardrobe.webp',
         title: 'The Lion, The Witch and The Wardrobe',
         descriptions: "The Lion, The Witch, and The Wardrobe begins when Peter, Susan, Edmund, and Lucy Pevensie arrive at the country manor of Professor Digory Kirke, sent there by their parents to escape the air-raids over London during World War II. Lucy, the youngest, is the first to stumble upon the wardrobe that leads to a cold and wintry land called Narnia. She meets the friendly faun, Mr. Tumnus, who reveals that Narnia is cursed with a perpetual winter under the rule of the evil White Witch. <br/> In the wake of realizing their destiny to fulfill a prophecy freeing Narnia from the clutches of winter and evil, the Pevensie siblings face a most dangerous challenge. Aslan, the true ruler of Narnia, lends his power to strengthen the four siblings and gives them the courage to face the White Witch in battle and finally reign over Narnia with joy and peace. <br/> Trumpets’ version of The Lion, The Witch and The Wardrobe written by Jaime Del Mundo and Luna Griño-Inocian, has been lauded with much praise for its compelling storytelling accompanied by vibrant music and lyrics, while staying true to the values and message that make this C.S. Lewis novel a belovedtale.",
         songs: [
@@ -193,8 +201,9 @@ export const useShows = defineStore('shows', {
         ],
         images: [''],
       },
+      //The YoungK King
       {
-        thumbnail: '',
+        thumbnail: '/thumbnails/TheYoungKing.webp',
         title: 'The Young King',
         descriptions: "This touching tale by Oscar Wilde is retold in musical form by Jaime del Mundo and Luna Griño-Inocian with inspired music by Lito Villareal. Taking the story out of Wilde’s accustomed melancholy, it is given the feel of a Walt Disney animated feature through heartwarming characters, and spirited music without losing its more moving moments. <br/> The story opens with a jovial nanny inviting the audience to view the tale of The Young King - a colorful story about a young shepherd boy suddenly called by a dying king and named his heir. <br/> The young boy is trained rigorously in the matters of the court, however, he becomes so mesmerized by the riches and luxuries of palace life that he loses sight of his purpose as the next King. When the young boy experiences three eye-opening dreams, he learns the truth about the plight of his people and what it means to be a genuine and humble ruler.",
         songs: [''],
