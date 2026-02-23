@@ -4,7 +4,7 @@ export const useShows = defineStore('shows', {
   state: () => ({
     shows: [
       {
-        thumbnail: '',
+        thumbnail: '/thumbnails/Firstname',
         title: 'First Name',
         descriptions:
           "This new staging of First Name is conceptualized to be a celebration full of life, radicalism and energy. <br/ > Staged with highly dramatic lighting and the simplest of sets, First Name takes the audience on a journey through the Biblethrough the eyes of today's generation.The music, composed by Gary Valenciano and Ogie Alcasid, is arranged by Mon Faustino of Power Play and the result is a score that is dynamic, forceful and reflective of the new millennium. <br/ > The libretto and lyrics are by award-winning director and writer Freddie Santos. Hit songs from this show include the internationally-released 'Could You Be Messiah' and 'Woman With No Name' <br/ > This Trumpets original musical, created by the late Freddie Santos is made for families, and the youth and adults of the current generation.",
@@ -22,7 +22,7 @@ export const useShows = defineStore('shows', {
         images: [''],
       },
       {
-        thumbnail: '',
+        thumbnail: '/thumbnails/JosephTheDreamer.webp',
         title: 'Joseph the Dreamer',
         descriptions:
           " Joseph the Dreamer is based on the Biblical story of Jacob’s son who saves Egypt with the power of his dreams.<br/ > It is no secret that Jacob favors Joseph above his twelve sons and so he gifts him with a coat of many colors. This display of affection causes the older brothers to resent Joseph. Their ire grows even more when Joseph reveals prophetic dreams that he would one day become lord over all of them. Blinded by rage and jealousy, the brothers plot Joseph’s downfall. <br/ > Faced with one misfortune after another, even imprisonment, Joseph’s faith in God is tested. But with the power of prayer and wisdom from his Mother, he rises above his tribulations, saves Egypt through the blessing of God and his prophetic dreams, and finally reconciles with his family. <br/ > Originally written by the late Freddie Santos, Trumpets’ Joseph the Dreamer is told through vibrant songs and energetic dance numbers all while proclaiming the message to never lose hope in the Lord, and most of all, to 'Never Look Down!'",
