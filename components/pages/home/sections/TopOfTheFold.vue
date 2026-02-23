@@ -5,7 +5,7 @@ import ContainerTemplate from '~/components/templates/wrapper/ContainerTemplate.
 
 <template>
   <ContainerTemplate :templates="['w-2000']" :class="styl['top-of-the-fold']">
-    <ContainerTemplate :templates="['w-1440']">
+    <ContainerTemplate :templates="['w-1440', 'padding-tb-300']">
       <h1 :class="styl['top-of-the-fold__header']">Bringing Stories of Faith to Life Throught Theater</h1>
     </ContainerTemplate>
   </ContainerTemplate>
@@ -13,7 +13,6 @@ import ContainerTemplate from '~/components/templates/wrapper/ContainerTemplate.
 
 <style lang="stylus" module='styl'>
   .top-of-the-fold
-    padding: 300px 0
     background-image: url('/banners/heroBanner.webp')
     background-repeat: no-repeat
     background-size: cover
