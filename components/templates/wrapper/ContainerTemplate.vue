@@ -28,4 +28,6 @@ defineProps({
     max-width: 1440px
   &--w-2000
     max-width: 2000px
+  &--padding-tb-300
+    padding: 300px 0
 </style>
