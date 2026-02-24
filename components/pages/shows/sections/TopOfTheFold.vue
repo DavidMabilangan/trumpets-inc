@@ -5,7 +5,7 @@
 
 
 <template>
-    <ContainerTemplate :templates="['w-2000', 'padding-tb-300']" :class="styl['topofthefold']">
+    <ContainerTemplate :templates="['w-2000', 'padding-tb-250']" :class="styl['topofthefold']">
         <ContainerTemplate :templates="['w-1440']">
             <h1 :class="styl['topofthefold__header']">Enjoy different kinds of Genres</h1>
         <p>

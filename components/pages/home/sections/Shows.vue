@@ -3,17 +3,17 @@ import ContainerTemplate from '~/components/templates/wrapper/ContainerTemplate.
 
 const shows = computed(() => {
   return [
-    {
+    { 
       title: 'The Lion, The witch and the wardrobe',
-      image: '/thumbnails/LWWBanner.webp',
+      image: '/thumbnails/TheLionTheWitchAndTheWardrobe.webp',
     },
     {
       title: 'The Bluebird of Happiness',
-      image: '/thumbnails/BBBanner.webp',
+      image: '/thumbnails/TheBlueBirdOfHappiness.webp',
     },
     {
       title: 'The Horse and his Boy',
-      image: '/thumbnails/THBBanner.webp',
+      image: '/thumbnails/TheHorseAndHisBoy.webp',
     },
   ]
 })
@@ -76,10 +76,11 @@ const shows = computed(() => {
                 list-style: none
                 text-align: center
                 &-img-wrapper
-                    height: 500px
+                    height: 600px
                     width: 100%
                     &__img
                         height: 100%
+                        width: 100%
                         object-fit: cover
                 &-title
                     font-size: 24px

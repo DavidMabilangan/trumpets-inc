@@ -5,7 +5,7 @@ import ContainerTemplate from '~/components/templates/wrapper/ContainerTemplate.
 
 <template>
   <ContainerTemplate :templates="['w-2000']" :class="styl['top-of-the-fold']">
-    <ContainerTemplate :templates="['w-1440', 'padding-tb-300']">
+    <ContainerTemplate :templates="['w-1440', 'padding-tb-250']">
       <h1 :class="styl['top-of-the-fold__header']">Bringing Stories of Faith to Life Throught Theater</h1>
     </ContainerTemplate>
   </ContainerTemplate>
