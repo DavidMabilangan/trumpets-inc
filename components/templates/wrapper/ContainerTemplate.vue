@@ -37,4 +37,6 @@ defineProps({
  .template
     &--padding-tb-300
       padding: 150px
+    &--padding-tb-250
+      padding: 125px 100px
 </style>
