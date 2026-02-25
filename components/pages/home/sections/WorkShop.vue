@@ -29,8 +29,8 @@ const workshop = computed(() => {
   <ContainerTemplate :templates="['w-1440']" :class="styl['workshop']">
     <div :class="styl['workshop__header']">
       <h1 :class="styl['workshop__header-heading']">Workshop</h1>
-      <NuxtLink to="#" class="btn">
-        <p>ALL workshop</p>
+      <NuxtLink to="https://www.trumpetsplayshop.com/html/class/class.html" class="btn" target="_blank">
+        <p>ALL WORKSHOP</p>
       </NuxtLink>
     </div>
     <p>
@@ -65,36 +65,67 @@ const workshop = computed(() => {
 
 <style lang="stylus" module="styl">
 .workshop
-    padding: 100px 0
-    &__header
+  padding: 100px 0
+  &__header
+    display: flex
+    flex-direction: row nowrap
+    justify-content: space-between
+    align-items: center
+    &-heading
+      font-size: 60px
+      text-transform: uppercase
+  &__items
+    &-list
       display: flex
-      flex-direction: row nowrap
-      justify-content: space-between
-      align-items: center
+      flex-flow: row wrap
+      justify-content: flex-start
+      padding:0
+      width: 100%
+      margin: 0 -10px
+      &__item
+        flex: 0 0 calc(33.33% - 20px)
+        margin: 0 10px
+        display: flex
+        flex-direction: column
+        list-style: none
+        text-align: center
+        &-img
+          height: 350px
+          width: 100%
+        &-title
+          font-size: 24px
+          font-weight: var(--semibold)
+        &-description
+          font-size: 18px
+          font-weight: var(--regular)
+
+@media (max-width: 1024px) and (min-width: 280px)
+  .workshop
+    &__header
       &-heading
-          font-size: 60px
+        font-size: 30px
+     &__items
+        &-list
+          justify-content: center
+          align-items: flex-start
+          margin: 0 auto
+          &__item
+            flex: 0 0 calc(50% - 40px)
+            margin: 0 20px 20px
+            align-items: center
+            &-img-wrapper
+              height: 500px
+            &-title
+              font-size: 18px
+            &:nth-child(3)
+                margin-top: 30px
+@media (max-width: 768px ) and (min-width: 280px)
+  .workshop
     &__items
       &-list
-        display: flex
-        flex-flow: row nowrap
-        justify-content: flex-start
-        padding:0
-        width: 100%
-        margin: 0 -10px
         &__item
-          flex: 0 0 calc(33.33% - 20px)
-          margin: 0 10px
-          display: flex
-          flex-direction: column
-          list-style: none
-          text-align: center
-          &-img
-            height: 350px
-            width: 100%
-          &-title
-            font-size: 24px
-            font-weight: var(--semibold)
-          &-description
-            font-size: 18px
-            font-weight: var(--regular)
+          flex: 0 0 100%
+          margin: 0 0 20px
+          &-img-wrapper
+            max-width: 400px
 </style>

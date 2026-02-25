@@ -47,7 +47,12 @@
                         &--active
                             color: var(--gold)
                             cursor: pointer
-                    
-
+    @media (max-width: 1024px) and (min-width: 280px)
+        .top-bar
+            &__wrapper
+                &-logo
+                    margin-bottom: 20px
+                &-list
+                    display: none
 
 </style>

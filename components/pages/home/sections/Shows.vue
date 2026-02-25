@@ -61,29 +61,62 @@ const shows = computed(() => {
         &-heading
             font-size: 60px
     &__items
-        &-list
-            display: flex
-            flex-flow: row nowrap
-            justify-content: flex-start
-            padding:0
+      &-list
+        display: flex
+        flex-flow: row wrap
+        justify-content: flex-start
+        padding:0
+        margin: 0 -10px
+        width: 100%
+        &__item
+          flex: 0 0 calc(33.33% - 20px)
+          display: flex
+          flex-direction: column
+          margin: 0 10px
+          list-style: none
+          text-align: center
+          &-img-wrapper
+            height: 600px
             width: 100%
-            margin: 0 -10px
+            &__img
+                height: 100%
+                width: 100%
+                object-fit: cover
+          &-title
+              font-size: 24px
+              font-weight: var(--semibold)
+              text-transform: uppercase
+  @media (max-width: 1024px) and (min-width: 280px)
+    .shows
+      padding: 50px 0 0
+      &__header
+        align-items: flex-start
+        gap: 25px
+        &-heading
+            font-size: 30px
+      &__items
+        &-list
+          justify-content: center
+          margin: 0 auto
+          &__item
+            flex: 0 0 calc(50% - 40px)
+            margin: 0 20px 20px
+            align-items: center
+            &-img-wrapper
+              height: 500px
+            &-title
+              font-size: 18px
+            &:nth-child(3)
+                margin-top: 30px
+    @media(max-width: 786px) and (min-width: 280px)
+      .shows
+        &__header
+          margin-bottom: 30px
+        &__items
+          &-list
             &__item
-                flex: 0 0 calc(33.33% - 20px)
-                display: flex
-                flex-direction: column
-                margin: 0 10px
-                list-style: none
-                text-align: center
-                &-img-wrapper
-                    height: 600px
-                    width: 100%
-                    &__img
-                        height: 100%
-                        width: 100%
-                        object-fit: cover
-                &-title
-                    font-size: 24px
-                    font-weight: var(--semibold)
-                    text-transform: uppercase
+              flex: 0 0 100%
+              margin: 0 0 20px
+              &-img-wrapper
+                max-width: 400px
 </style>

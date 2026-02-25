@@ -27,6 +27,7 @@ defineProps({
   &--w-1440
     max-width: 1440px
   &--w-2000
+    w-idth: 100%
     max-width: 2000px
   &--padding-tb-250
     padding: 250px 0
@@ -38,5 +39,5 @@ defineProps({
     &--padding-tb-300
       padding: 150px
     &--padding-tb-250
-      padding: 125px 100px
+      padding: 200px 0
 </style>

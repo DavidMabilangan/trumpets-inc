@@ -20,5 +20,12 @@ import ContainerTemplate from '~/components/templates/wrapper/ContainerTemplate.
     &__header
       font-size: 60px
       max-width: 700px
+
+@media (max-width: 1024px) and (min-width: 280px)
+  .top-of-the-fold
+    &__header
+      font-size: 30px
+      max-width: unset
+    
       
 </style>
