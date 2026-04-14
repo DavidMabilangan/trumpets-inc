@@ -24,8 +24,8 @@ export const useLink = defineStore('link', {
                 active: false
             },
             {
-                to: '/support-us',
-                label: 'Support Us',
+                to: '/outreach',
+                label: 'outreach',
                 active: false
             }
         ]

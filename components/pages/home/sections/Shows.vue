@@ -23,7 +23,7 @@ const shows = computed(() => {
   <ContainerTemplate :templates="['w-1440']" :class="styl['shows']">
     <div :class="styl['shows__header']">
       <h1 :class="styl['shows__header-heading']">SHOWS</h1>
-      <NuxtLink to="#" class="btn">
+      <NuxtLink to="/shows" class="btn">
         <p>ALL SHOWS</p>
       </NuxtLink>
     </div>
