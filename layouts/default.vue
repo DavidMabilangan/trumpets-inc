@@ -9,6 +9,5 @@
     <section>
         <slot />
     </section>
-    <support/>
     <bottombar />
 </template>
