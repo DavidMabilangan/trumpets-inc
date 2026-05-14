@@ -1,11 +1,11 @@
 {
-    "trailingConna": "none",
-    "arrowParens": "avoid",
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 2, 
-    "useTabs": false,
-    "SingleAttributePerLine": true,
-    "brakeSameLine": false,
-    "htmlWhitespaceSensitivity": "ignore"
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleAttributePerLine": true,
+  "bracketSameLine": false,
+  "htmlWhitespaceSensitivity": "ignore"
 }

@@ -1,5 +1,4 @@
 <script setup>
-import ContainerTemplate from '~/components/templates/wrapper/ContainerTemplate.vue'
 
 const shows = computed(() => {
   return [
@@ -16,6 +15,16 @@ const shows = computed(() => {
       image: '/thumbnails/TheHorseAndHisBoy.webp',
     },
   ]
+})
+
+const heading = (title) => ({
+  heading: {
+    title: {
+      level: 2,
+      text: title,
+      templates: ['fs-24', 'ff-primary']
+    }
+  }
 })
 </script>
 
@@ -43,7 +52,9 @@ const shows = computed(() => {
               loading="lazy"
             />
           </div>
-          <p :class="styl['shows__items-list__item-title']">{{ item.title }}</p>
+          <p :class="styl['shows__items-list__item-title']">
+            <HeadingTemplate v-bind="heading(item.title)"/>
+          </p>
         </li>
       </ul>
     </div>
@@ -71,8 +82,8 @@ const shows = computed(() => {
         &__item
           flex: 0 0 calc(33.33% - 20px)
           display: flex
-          flex-direction: column
           margin: 0 10px
+          flex-direction: column
           list-style: none
           text-align: center
           &-img-wrapper
@@ -104,10 +115,7 @@ const shows = computed(() => {
             align-items: center
             &-img-wrapper
               height: 500px
-            &-title
-              font-size: 18px
-            &:nth-child(3)
-                margin-top: 30px
+            
     @media(max-width: 786px) and (min-width: 280px)
       .shows
         &__header

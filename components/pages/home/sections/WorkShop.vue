@@ -23,6 +23,22 @@ const workshop = computed(() => {
     },
   ]
 })
+
+const heading= (title, description) => ({
+  heading: {
+    title: {
+      level: 2,
+      text: title,
+      templates: ['fs-24', 'mb-20', 'fw-smbold']
+    },
+    subtitle: {
+      level: 2,
+      text: description,
+      templates: ['fs-18', 'fw-regular']
+    }
+  },
+  templates: ['ff-primary']
+})
 </script>
 
 <template>
@@ -51,12 +67,7 @@ const workshop = computed(() => {
               preload
               loading="lazy"
             />
-          <h1 :class="styl['workshop__items-list__item-title']">
-            {{ item.title }}
-          </h1>
-          <p :class="styl['workshop__items-list__item-description']">
-            {{ item.description }}
-          </p>
+          <HeadingTemplate v-bind="heading(item.title, item.description)" />
         </li>
       </ul>
     </div>
@@ -90,15 +101,9 @@ const workshop = computed(() => {
         list-style: none
         text-align: center
         &-img
-          height: 350px
+          height: 300px
           width: 100%
-        &-title
-          font-size: 24px
-          font-weight: var(--semibold)
-        &-description
-          font-size: 18px
-          font-weight: var(--regular)
-
+          margin: 20px 0 
 @media (max-width: 1024px) and (min-width: 280px)
   .workshop
     &__header

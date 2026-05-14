@@ -25,7 +25,7 @@ onUnmounted(() => {
         scroll && styl['top-bar--scrolled'] 
     ]">
         <ContainerTemplate :templates="['w-1440']" :class="styl['top-bar__wrapper']">
-            <div :class="styl['top-bar__wrapper-logo']"> <NuxtLink to="/"><NuxtImg src="/logo.svg" width="100" height="150"  /></NuxtLink></div>
+            <div :class="styl['top-bar__wrapper-logo']"> <NuxtLink to="/"><NuxtImg src="/logo.svg" width="150" /></NuxtLink></div>
             <ul :class="styl['top-bar__wrapper-list']">
                 <li 
     v-for="(link, key) in links" 
@@ -73,10 +73,10 @@ onUnmounted(() => {
                 margin: 0 10px
                 white-space: nowrap
                 font-size: 18px
-
+                font-family: var(--font-primary)
                 a
                     text-decoration: none
-                    color: var(--white)
+                    color: var(--secText)
                     text-transform: uppercase
 
                     &:hover
