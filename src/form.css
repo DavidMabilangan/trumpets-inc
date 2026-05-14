@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+        
+}
+
+input{
+    background-color: #1a1a1a !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+input:focus{   
+    background-color: #fff !important;
+    color: #000 !important;
+}
+/* this are will change the color of text area */
+textarea{
+    background-color: #1a1a1a !important;
+    resize: none;
+    color: #fff !important;
+    height: clamp(100px, 150px, 300px);
+}
+
+/* When textare is click this will change the design */
+textarea:focus{   
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.btn{
+    background-color: #E22823;
+    color: #fff;
+    font-weight: 700;
+    
+}
+h1, h2{ /* change the color of h1 and h2 to and change the font family*/
+    color: #E22823;
+    font-family: "Montserrat", sans-serif;
+    
+}
+h1{
+    font-weight: 900px;
+}
+h2{
+    font-size: 24px;
+}
