@@ -22,6 +22,17 @@ function Home() {
         </div>
       </section>
       <section>
+          <div className="container-lg upcoming pt-5 pb-5">
+             <div className='details'>
+               <img src={`/JDT.jpg`} alt="JTD" className="img"/>
+              <div className="info">
+                <h1>WHAT'S NEW</h1>
+                <p>UPCOMING SOON THIS NOVEMBER</p>
+              </div>
+             </div>
+          </div>
+      </section>
+      <section>
         {/* shows section */}
         <div className="container-lg homeShows">
           <div className="title-btn d-flex align-items-center" >{/*title plus btn */}
@@ -37,10 +48,10 @@ function Home() {
               
             </NavLink>
           </div>
-          <div className="container p-lg-0">
+          <div className="pb-5">
             <p>
               Creating original musicals that aim to teach, inspire, and
-              entertain
+              entertain.
             </p>
           </div>
           <Swiper
@@ -94,7 +105,7 @@ function Home() {
                   />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">The Bluebird of Hapiness</h5>
+                  <h5 className="card-title">The Bluebird of Happiness</h5>
                 </div>
               </NavLink>
             </SwiperSlide>
@@ -118,13 +129,22 @@ function Home() {
               </NavLink>
             </SwiperSlide>
           </Swiper>
-        </div>
-         
+            <NavLink
+              to="/Show"
+              className="nav-link mobile-btn btn"
+              activeclassname="active"
+              onClick={closeNavbar}
+            >
+              
+                VIEW MORE
+              
+            </NavLink>
+        </div>  
       </section>
       <section>
         {/* go to trumpets playshop website */}
         <div className="container workShops">
-          <div className="d-flex flex-row justify-content-between align-items-center justify-content-center container headingContainer px-4 px-lg-0">
+          <div className="d-flex justify-content-between align-items-center">
             <h1>Workshops</h1>
             <a
               href="https://trumpetsplayshop.com/html/class/class.html"
@@ -135,13 +155,13 @@ function Home() {
               View more
             </a>
           </div>
-          <div className="container p-4 p-lg-0">
+          <div className="">
             <p>
               Playshop is Trumpets’ workshop and training program that sets the
               stage for emerging and world class talent in the performing arts.
             </p>
           </div>
-          <div className="pt-2 pb-5 cardHolder">
+          <div className="pt-5 pb-5 cardHolder">
               <Swiper
             // install Swiper modules
             modules={[Autoplay, Pagination ]}
@@ -213,7 +233,10 @@ function Home() {
             </div>
             </SwiperSlide>
               </Swiper>
-               <NavLink
+               
+           
+          </div>
+          <NavLink
             to="https://www.trumpetsplayshop.com/html/class/class.html"
             target="_blank"
             className="nav-link mobile-btn btn mt-3"
@@ -222,8 +245,6 @@ function Home() {
           >
             VIEW MORE
           </NavLink>
-           
-          </div>
         </div>
         {/* <div className="container news pt-5 pb-5">
             <div className="box1">

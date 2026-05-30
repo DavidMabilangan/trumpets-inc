@@ -45,7 +45,7 @@ function Navi() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className={`collapse navbar-collapse d-lg-flex justify-content-end ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
-            <ul className="navbar-nav mb-2 mb-lg-0">
+            <ul className="navbar-nav mt-5 mt-lg-0 mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink to="/" className="nav-link" activeclassname="active" onClick={closeNavbar}>
                   Home
