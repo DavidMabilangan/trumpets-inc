@@ -27,7 +27,7 @@ function Home() {
                <img src={`/JDT.jpg`} alt="JTD" className="img"/>
               <div className="info">
                 <h1>WHAT'S NEW</h1>
-                <p>UPCOMING SOON THIS NOVEMBER</p>
+                <p>COMING SOON THIS NOVEMBER</p>
               </div>
              </div>
           </div>
